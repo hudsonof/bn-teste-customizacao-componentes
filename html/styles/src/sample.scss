@@ -1,0 +1,127 @@
+/* Colors */
+$primary-color: #4cbca7;
+$secondary-color: #18eeb5;
+$secondary-price-color: #969696;
+$badge-bg-color: #d20c42;
+$badge-font-color: #fdf3f4;
+$border-color: #dcdcdc;
+
+.beon-showcase__title {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Item box */
+.beon-showcase__item {
+    padding: 1em;
+}
+
+.beon-showcase {
+    .beon-showcase__item {
+        margin-left: 1.5em;
+        margin-right: 2.5em;
+
+        &:hover {
+            box-shadow: none;
+            border: 1px solid $border-color;
+        }
+    }
+}
+
+/* Badges */
+.beon-showcase__item-badge.beon-showcase__item-badge--off {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: unset;
+    text-align: center;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    font-size: 1.5em;
+    line-height: 1em;
+    font-weight: 500;
+    color: $badge-font-color;
+    background-color: $badge-bg-color;
+}
+
+.beon-showcase {
+    .beon-showcase__item-badge {
+        position: absolute;
+        top: 3em;
+        left: 1.5em;
+    }
+
+    .beon-showcase__item-badge:nth-child(2) {
+        position: absolute;
+        top: 7em;
+        left: 1.5em;
+    }
+}
+
+/* Item description */
+.beon-showcase {
+    .beon-showcase__item-title {
+        padding: 1px 0.5em;
+        font-weight: 500;
+    }
+}
+
+.beon-showcase__item-description {
+    min-height: 80px;
+}
+
+.beon-showcase__item-price,
+.beon-showcase__item-installments {
+    color: $secondary-price-color;
+}
+
+.beon-showcase__item-price--from {
+    text-decoration: line-through;
+}
+
+.prefix {
+    margin-left: 0.5em;
+}
+
+.beon-showcase {
+    .beon-showcase__item-price--to .beon-showcase__price,
+    .beon-showcase__item-price-box--simple .beon-showcase__price {
+        color: $primary-color;
+        line-height: 2rem;
+    }
+}
+
+/* Item buttons */
+.beon-showcase {
+    .beon-showcase__item-actions {
+        opacity: 0;
+    }
+    .beon-showcase__item {
+        &:hover .beon-showcase__item-actions {
+            opacity: 1;
+        }
+    }
+}
+
+.beon-button--primary {
+    background-color: transparent;
+    border: 2px solid $secondary-color;
+}
+
+.beon-button__label {
+    text-transform: lowercase;
+}
+
+/* Slider buttons */
+.beon-slider {
+    .tns-nav button[data-nav].tns-nav-active {
+        box-shadow: inset 0 0 0 0.2em $primary-color;
+    }
+
+    .tns-nav button[data-nav] {
+        width: 1em;
+        height: 1em;
+    }
+}

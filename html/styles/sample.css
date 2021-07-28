@@ -1,0 +1,105 @@
+/* Colors */
+.beon-showcase__title {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Item box */
+.beon-showcase__item {
+  padding: 1em;
+}
+
+.beon-showcase .beon-showcase__item {
+  margin-left: 1.5em;
+  margin-right: 2.5em;
+}
+.beon-showcase .beon-showcase__item:hover {
+  box-shadow: none;
+  border: 1px solid #dcdcdc;
+}
+
+/* Badges */
+.beon-showcase__item-badge.beon-showcase__item-badge--off {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  padding: unset;
+  text-align: center;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  font-size: 1.5em;
+  line-height: 1em;
+  font-weight: 500;
+  color: #fdf3f4;
+  background-color: #d20c42;
+}
+
+.beon-showcase .beon-showcase__item-badge {
+  position: absolute;
+  top: 3em;
+  left: 1.5em;
+}
+.beon-showcase .beon-showcase__item-badge:nth-child(2) {
+  position: absolute;
+  top: 7em;
+  left: 1.5em;
+}
+
+/* Item description */
+.beon-showcase .beon-showcase__item-title {
+  padding: 1px 0.5em;
+  font-weight: 500;
+}
+
+.beon-showcase__item-description {
+  min-height: 80px;
+}
+
+.beon-showcase__item-price,
+.beon-showcase__item-installments {
+  color: #969696;
+}
+
+.beon-showcase__item-price--from {
+  text-decoration: line-through;
+}
+
+.prefix {
+  margin-left: 0.5em;
+}
+
+.beon-showcase .beon-showcase__item-price--to .beon-showcase__price,
+.beon-showcase .beon-showcase__item-price-box--simple .beon-showcase__price {
+  color: #4cbca7;
+  line-height: 2rem;
+}
+
+/* Item buttons */
+.beon-showcase .beon-showcase__item-actions {
+  opacity: 0;
+}
+.beon-showcase .beon-showcase__item:hover .beon-showcase__item-actions {
+  opacity: 1;
+}
+
+.beon-button--primary {
+  background-color: transparent;
+  border: 2px solid #18eeb5;
+}
+
+.beon-button__label {
+  text-transform: lowercase;
+}
+
+/* Slider buttons */
+.beon-slider .tns-nav button[data-nav].tns-nav-active {
+  box-shadow: inset 0 0 0 0.2em #4cbca7;
+}
+.beon-slider .tns-nav button[data-nav] {
+  width: 1em;
+  height: 1em;
+}
+
+/*# sourceMappingURL=sample.css.map */
